@@ -98,6 +98,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .button__escape:hover, .button__escape:focus {
     opacity: 1.0;
     background-color: var(--escape-button-hover-color);
+    color: var(--button-font-color);
 }
 
 thead {
