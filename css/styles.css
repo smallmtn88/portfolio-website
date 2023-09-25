@@ -10,7 +10,6 @@
     --button-border-bottom-color: rgba(0, 0, 0, 0.25);
     --escape-button-color: #a06c00;
     --escape-button-hover-color: #880d6d;
-    --escape-button-hover-font-color: #fff;
     --section-divider-color1: rgba(0, 0, 0, 0);
     --section-divider-color2: rgba(0, 0, 0, 75);
     --projects-bg-color: #f5f5dc;
@@ -82,14 +81,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .button__escape {
     background-color: var(--escape-button-color);
-    font-weight: var(--font-weight-body);
     transition: background-color;
 }
 
 .button__escape:hover, .button__escape:focus {
     opacity: 1.0;
     background-color: var(--escape-button-hover-color);
-    color: var(--button-font-color);
 }
 
 thead {
