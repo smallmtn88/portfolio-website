@@ -45,6 +45,10 @@ h2 {
     font-weight: var(--font-weight-heading);
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
     color: var(--primary-color);
 }
@@ -201,10 +205,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.about-intro__item {
-    list-style-type: none;
 }
 
 .projects {
