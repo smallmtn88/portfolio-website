@@ -1,10 +1,8 @@
 :root {
-    --primary-color: #357b70;
-    --secondary-color: #e0b354;
-    --dark-grey: #2b2b2b;
-    --a-visited-color: #0a2868;
-    --a-active-color: #64e8dd;
-    --page-title-color: #010352;
+    --primary-color: #111; /*#357b70*/
+    --secondary-color: #d6f3ff;
+    --a-hover-color: #800c70;
+    --a-active-color: #f51616;
     --button-color: #034cac;
     --button-font-color: #fff;
     --button-border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -13,6 +11,7 @@
     --section-divider-color1: rgba(0, 0, 0, 0);
     --section-divider-color2: rgba(0, 0, 0, 75);
     --projects-bg-color: #f5f5dc;
+    --projects-border-color: #0303a1;
     --sun-shift-color1: #edc655;
     --sun-shift-color2: #fcffad;
     --sun-shift-color3: #f39d3a;
@@ -29,6 +28,7 @@
 }
 
 body {
+    background-color: var(--secondary-color);
     font-family: 'Rubik', sans-serif;
     font-weight: var(--font-weight-body);
     font-size: var(--font-size-body);
@@ -53,12 +53,9 @@ a {
     color: var(--primary-color);
 }
 
-a:visited {
-    color: var(--a-visited-color);
-}
-
 a:hover, a:focus {
     text-decoration: none;
+    color: var(--a-hover-color);
 }
 
 a:active {
@@ -130,6 +127,7 @@ hr {
 
 .social-media__link {
     text-decoration: none;
+    margin: 0 5px;
 }
 
 .profile {
@@ -175,15 +173,14 @@ hr {
     text-align: right;
 }
 
-.page-title {
-    color: var(--page-title-color);
+.page-title, .page-description {
     text-align: center;
 }
 
 .page-footer {
     clear: both;
     display: flex;
-    padding: 20px;
+    padding: 10px 0 30px;
     flex-direction: column;
     align-items: center;
 }
@@ -208,14 +205,21 @@ hr {
 }
 
 .projects {
-    margin: auto 20px;
+    margin: auto 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
 .projects__item {
     background-color: var(--projects-bg-color);
+    border: 8px outset var(--projects-border-color);
+    border-radius: 10%;
+    padding: 0 13px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media all and (max-width: 500px) {
@@ -243,6 +247,12 @@ hr {
     }
     h2 {
         font-size: var(--font-size-h2-media);
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
