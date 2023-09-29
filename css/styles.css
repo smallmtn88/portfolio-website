@@ -110,6 +110,8 @@ td {
 
 .contact-info {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 hr {
@@ -234,7 +236,7 @@ hr {
 
 @media all and (max-width: 750px) {
     .profile {
-        max-width: 500px;
+        margin: 0 20px;
         display: flex;
         flex-direction: column;
     }
