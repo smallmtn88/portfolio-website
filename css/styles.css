@@ -12,6 +12,7 @@
     --section-divider-color2: rgba(0, 0, 0, 75);
     --projects-bg-color: #f5f5dc;
     --projects-border-color: #0303a1;
+    --form-bg-color: #dffd8c;
     --font-size-h1: 36px;
     --font-size-h2: 27px;
     --font-size-body: 18px;
@@ -110,8 +111,7 @@ td {
 
 .contact-info {
     text-align: center;
-    display: flex;
-    justify-content: space-between;
+    margin: 30px 0;
 }
 
 hr {
@@ -145,10 +145,6 @@ hr {
     text-align: center;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .page-header {
     display: flex;
     width: 100%;
@@ -158,10 +154,6 @@ hr {
 .page-header__item {
     flex: 0 1 20%;
 }
-
-/*.page-header__item:first-child {
-    object-fit: contain;
-}*/
 
 .page-header__item:last-child {
     flex-grow: 1;
@@ -220,6 +212,10 @@ hr {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 @media all and (max-width: 500px) {
