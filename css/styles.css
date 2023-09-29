@@ -135,7 +135,7 @@ hr {
     max-width: 300px;
     height: auto;
     margin-right: 40px;
-    border-radius: 50%;
+    border-radius: 35%;
 }
 
 .profile__button {
@@ -150,16 +150,16 @@ hr {
 .page-header {
     display: flex;
     width: 100%;
-    padding: 20px 50px;
+    padding: 25px;
 }
 
 .page-header__item {
     flex: 0 1 20%;
 }
 
-.page-header__item:first-child {
+/*.page-header__item:first-child {
     object-fit: contain;
-}
+}*/
 
 .page-header__item:last-child {
     flex-grow: 1;
@@ -233,18 +233,21 @@ hr {
 }
 
 @media all and (max-width: 750px) {
-    .navigation-list li {
+    .profile {
+        max-width: 500px;
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
+    }
+    .profile__portrait {
+        align-self: center;
+        margin-right: 0;
+    }
+    .page-header {
+        flex-direction: column;
     }
     .projects {
         grid-gap: 10px;
     }
-    /*.projects__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }*/
     h1 {
         font-size: var(--font-size-h1-media);
     }
