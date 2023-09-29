@@ -12,9 +12,6 @@
     --section-divider-color2: rgba(0, 0, 0, 75);
     --projects-bg-color: #f5f5dc;
     --projects-border-color: #0303a1;
-    --sun-shift-color1: #edc655;
-    --sun-shift-color2: #fcffad;
-    --sun-shift-color3: #f39d3a;
     --font-size-h1: 36px;
     --font-size-h2: 27px;
     --font-size-body: 18px;
@@ -100,10 +97,6 @@ thead {
 td {
     padding: 5px 15px;
     line-height: 1.5;
-}
-
-.svg-link {
-    text-align: center;
 }
 
 .footnote {
@@ -258,77 +251,4 @@ hr {
     h2 {
         font-size: var(--font-size-h2-media);
     }
-}
-
-@keyframes color-change {
-    0% {
-        fill: var(--sun-shift-color1);
-    }
-    50% {
-        fill: var(--sun-shift-color2);
-    }
-    100% {
-        fill: var(--sun-shift-color3);
-    }
-}
-
-.sun {
-    animation: 10s color-change infinite alternate ease-in-out;
-}
-
-@keyframes ray1-shine {
-    0% {
-        fill-opacity: 50%;
-    }
-    33% {
-        fill-opacity: 25%;
-    }
-    67% {
-        fill-opacity: 100%;
-    }
-    100% {
-        fill-opacity: 75%;
-    }
-}
-
-.ray1 {
-    animation: 2s ray1-shine infinite alternate linear;
-}
-
-@keyframes ray2-shine {
-    0% {
-        fill-opacity: 75%;
-    }
-    33% {
-        fill-opacity: 50%;
-    }
-    67% {
-        fill-opacity: 25%;
-    }
-    100% {
-        fill-opacity: 100%;
-    }
-}
-
-.ray2 {
-    animation: 2s ray2-shine infinite alternate linear;
-}
-
-@keyframes ray3-shine {
-    00% {
-        fill-opacity: 100%;
-    }
-    33% {
-        fill-opacity: 75%;
-    }
-    67% {
-        fill-opacity: 50%;
-    }
-    100% {
-        fill-opacity: 25%;
-    }
-}
-
-.ray3 {
-    animation: 2s ray3-shine infinite alternate linear;
 }
