@@ -8,6 +8,7 @@
     --button-border-bottom-color: rgba(0, 0, 0, 0.25);
     --escape-button-color: #a06c00;
     --escape-button-hover-color: #880d6d;
+    --skills-table-border-color: #050544;
     --section-divider-color1: rgba(0, 0, 0, 0);
     --section-divider-color2: rgba(0, 0, 0, 75);
     --projects-bg-color: #f5f5dc;
@@ -20,7 +21,8 @@
     --font-size-thead: 22px;
     --font-size-footnote: 16px;
     --font-size-h1-media: 24px;
-    --font-size-h2-media: 18px;
+    --font-size-h2-media: 20px;
+    --font-size-h3-media: 18px;
     --font-weight-heading: 700;
     --font-weight-body: 400;
     --font-weight-footnote: 700;
@@ -44,11 +46,14 @@ h2 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-heading);
     text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 h3 {
     font-size: var(--font-size-h3);
-    font-weight: var(--font-weight-heading)
+    font-weight: var(--font-weight-heading);
+    text-align: center;
 }
 
 li {
@@ -101,16 +106,20 @@ thead {
     line-height: 1.5;
     font-weight: var(--font-weight-heading);
     font-size: var(--font-size-thead);
+    border: 1.5px solid var(--skills-table-border-color);
 }
 
 td {
     padding: 5px 15px;
     line-height: 1.5;
+    border: 1px solid var(--skills-table-border-color);
 }
 
 .footnote {
     font-size: var(--font-size-footnote);
     font-weight: var(--font-weight-footnote);
+    margin: 30px auto;
+    text-align: center;
 }
 
 #contact-form {
@@ -190,19 +199,27 @@ hr {
 }
 
 .about {
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
-.bio {
+.about__skills--table {
+    border: 2px solid var(--skills-table-border-color);
+    margin: auto;
+}
+
+.about__bio, .about__intro, .about__skills {
     text-align: justify;
     margin: 50px auto;
 }
 
-.about-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about__skills--years {
+    text-align: center;
+}
+
+.cv-button {
+    display: block;
+    text-align: center;
 }
 
 .project-catalog {
@@ -257,6 +274,9 @@ hr {
     .page-header {
         flex-direction: column;
     }
+    .about {
+        margin: 30px 20px;
+    }
     .projects {
         grid-gap: 10px;
     }
@@ -265,5 +285,8 @@ hr {
     }
     h2 {
         font-size: var(--font-size-h2-media);
+    }
+    h3 {
+        font-size: var(--font-size-h3-media);
     }
 }
