@@ -23,6 +23,7 @@
     --font-size-h1-media: 24px;
     --font-size-h2-media: 20px;
     --font-size-h3-media: 18px;
+    --font-size-thead-media: 18px;
     --font-weight-heading: 700;
     --font-weight-body: 400;
     --font-weight-footnote: 700;
@@ -274,7 +275,7 @@ hr {
     .page-header {
         flex-direction: column;
     }
-    .about {
+    .about, .footnote {
         margin: 30px 20px;
     }
     .projects {
@@ -288,5 +289,8 @@ hr {
     }
     h3 {
         font-size: var(--font-size-h3-media);
+    }
+    thead {
+        font-size: var(--font-size-thead-media);
     }
 }
